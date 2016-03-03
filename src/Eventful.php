@@ -129,7 +129,7 @@ class Eventful
         $fieldsString = '';
 
         foreach ($postArgs as $argKey => $argValue) {
-            $fieldsString .= $key.'='.urlencode($argValue).'&';
+            $fieldsString .= $argKey.'='.urlencode($argValue).'&';
         }
 
         $fieldsString = rtrim($fieldsString, '&');
